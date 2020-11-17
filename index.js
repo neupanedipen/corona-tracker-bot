@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const fetch = require('node-fetch')
 const token = config.token;
-
+const channelId = '778186187360960543';
 
 const PREFIX = '!';
 client.on('ready', () => {
@@ -11,7 +11,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.channel.id === '778186187360960543') {
+    if (message.channel.id === channelId) {
         let args = message.content.substring(PREFIX.length).split(" ");
         let country;
         if (args[0] === 'corona') {
