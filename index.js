@@ -48,10 +48,4 @@ client.on('message', message => {
 
 })
 
-// client.on('guildMemberAdd', member => {
-//     const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'welcome');
-//     if (!channel) return;
-//     welcomeChannel.send(`Welcome to ${member}, please the rules in the #rules channel.`)
-// });
-
 client.login(token);
