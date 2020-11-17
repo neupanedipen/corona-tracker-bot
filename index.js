@@ -19,8 +19,8 @@ client.on('message', message => {
                 message.reply("Please supply a valid country in the format !corona [country] or !corona help for help");
             } else if (args[1] === 'help') {
                 message.reply(`
-                1. To get the corona stats for any country type !corona country-name 
-                2. If the country name consists of two letters (eg.New Zealand), provide country name as New%20zealand so the complelte command looks like !corona New%20zealand . 
+                1. To get the corona stats for any country type \`!corona country-name\` 
+                2. If the country name consists of two letters (eg.New Zealand), provide country name as New%20zealand so the complete command looks like \`!corona New%20zealand\` 
                 `)
             } else {
                 country = args[1];
