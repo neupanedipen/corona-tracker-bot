@@ -16,7 +16,7 @@ client.on('message', message => {
         let country;
         if (args[0] === 'corona') {
             if (!args[1]) {
-                message.reply("Please supply a valid country in the format !corona [country] or !corona help for help");
+                message.reply("Please supply a valid country in the format `!corona [country]` or `!corona help` for help");
             } else if (args[1] === 'help') {
                 message.reply(`
                 1. To get the corona stats for any country type \`!corona country-name\` 
