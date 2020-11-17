@@ -2,7 +2,7 @@ const config = require('./config.json')
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fetch = require('node-fetch')
-const token = process.env.token;
+const token = config.token;
 
 
 const PREFIX = '!';
@@ -19,7 +19,7 @@ client.on('message', message => {
                 message.reply("Please supply a valid country in the format !corona [country]");
             } else {
                 country = args[1];
-                const url = process.env.api + `/${country}`;
+                const url = config.api + `/${country}`;
                 fetch(url)
                     .then(res => res.json())
                     .then(data => {
